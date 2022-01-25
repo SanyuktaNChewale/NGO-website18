@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>DONATION FORM</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  .info
+  {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  .bg-img {
+  /* The image used */
+  background-image: url("image/background.png");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+  
+</style>
+</head>
+
+<div class="bg-img">
+<div class="container"><br>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="background-color: white"><br>
+      <span id="help"></span>
+      <h4 style="color:#013766; font-family: Apple Chancery, cursive ;"><img src="image/logo.png" alt="book" height="80px" width="100px">&nbsp;Donation Form</h4>
+      <form class="" action="donateform.php" method="post">
+        <div class="form-group">
+          <i class="fa fa-user"></i><label for="">&nbsp;&nbsp;Full Name</label>
+          <input type="text" name="name" id="name" value="" class="form-control" placeholder="Enter Full Name" required>
+          <span id="name-help" ></span>
+        </div>
+        <div class="form-group">
+          <i class="fa fa-envelope"></i><label for="">&nbsp;&nbsp;Email</label>
+          <input type="email" name="email" id="email" value="" class="form-control" placeholder="Enter Email" required>
+          <span id="email-help" ></span>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-mobile-alt"></i><label for="">&nbsp;&nbsp;Mobile</label>
+          <input type="text" name="mobile" id="mobile" value="" class="form-control" placeholder="Enter Mobile Number" required>
+          <span id="mob-help" ></span>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-rupee-sign"></i><label for="">&nbsp;&nbsp;Donation Amount</label>
+          <input type="amount" name="amount" id="amount" value="" class="form-control" placeholder="Enter Amount" required>
+          <span id="amo-help" ></span>
+        </div>
+        <div class="form-group">
+          <i class="far fa-comment"></i><label for="">&nbsp;&nbsp;Comment</label>
+          <input type="comment" name="comment" id="comment" value="" class="form-control" required>
+          <span id="com-help" ></span>
+        </div>
+        
+        <div class="form-group">
+      <button type=" button " id="submit" name="save"  class="btn btn-primary" style="width: 100%">Donate Now</button>
+        </div>
+      </form>
+    </div> 
+  </div>
+</div>
+</div>
+
+</body>
+</html>
+
+
